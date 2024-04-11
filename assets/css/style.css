@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+header{
+    height: 100vh ;
+}
+
+header::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: rgb(184, 171, 171);
+   background-image: url("/assets/images/background.png");
+   background-size: cover;
+   height: 100vh;
+   width: 100vw;
+   display: block;
+   z-index: -10;
+}
+
+
+h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+    color: rgb(3, 3, 3);
+}
+
+h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    color:#3e3e5c;
+}
+
+
+
+#secaoitens
+{
+    height: 100vh;
+    background-color: rgb(203, 211, 240);
+}
+
+.card{
+    max-height: 200px;
+    max-width: 200px;
+    position: relative;
+    cursor: pointer;
+}
+
+.card.image{
+    height: 100%;
+    width: 100;
+}
+.image img{
+    height:100% ;
+    width: 100%;
+}
+.card .texto{
+    position: absolute;
+    top: 0; 
+    opacity: 0; 
+    transition: opacity .5s;  
+}
+
+.card:hover .texto{   
+    opacity: 1;   
+}
+
+#textocentral{
+position: relative;
+}
